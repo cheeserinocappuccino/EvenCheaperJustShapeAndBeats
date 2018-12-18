@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
     public GameObject Target;
-    private Vector3 offset;
+    
 
 	// Use this for initialization
 	void Start () {
-        offset = Target.transform.position - transform.position;
+        
 	}
 	
 	// Update is called once per frame

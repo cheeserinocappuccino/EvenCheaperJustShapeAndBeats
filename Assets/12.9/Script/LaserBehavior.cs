@@ -25,13 +25,17 @@ public class LaserBehavior : MonoBehaviour {
 
     public int ealyWarning = 4;
 
+
+    public GameObject thisSelf; // 刪除的時候刪除自己
+    public float dieSpeed;
 	// Use this for initialization
 	void Awake () {
+        thisSelf = this.gameObject;
         SpawnBehave();
         laser = GetComponent<LineRenderer>();
         x = 0;
 
-        Destroy(this.gameObject,0.6f); // 感覺這個要對拍但目前先這樣;
+        Destroy(thisSelf,dieSpeed); // 感覺這個要對拍但目前先這樣;
 	}
 	
 	// Update is called once per frame

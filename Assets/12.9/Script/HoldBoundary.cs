@@ -11,13 +11,13 @@ public class HoldBoundary : MonoBehaviour {
         downBoundary, 
         zBoundary;
 
-    public GameObject camera;
+    public GameObject theCamera;
     private float cameraYorigin;
     private float toTopheight,toDownheight;
     
     // Use this for initialization
     void Start () {
-        cameraYorigin = camera.transform.position.y;
+        cameraYorigin = theCamera.transform.position.y;
 
         toTopheight = topBoundary - cameraYorigin;
 
@@ -26,8 +26,8 @@ public class HoldBoundary : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        topBoundary = camera.transform.position.y + toTopheight;
-        downBoundary = camera.transform.position.y - toDownheight;
+        topBoundary = theCamera.transform.position.y + toTopheight;
+        downBoundary = theCamera.transform.position.y - toDownheight;
         //Debug.Log(topBoundary + "   " + downBoundary);
 
 	}
