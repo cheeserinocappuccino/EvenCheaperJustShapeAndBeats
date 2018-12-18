@@ -60,6 +60,7 @@ public class DJ : MonoBehaviour {
     // 雷射物件
     public GameObject laser;
     public GameObject laserSlow;
+    public GameObject fullScreenLRLaser;
 
     // 讀樂譜用的變數
     Notesheet loadNotes = new Notesheet();
@@ -99,7 +100,7 @@ public class DJ : MonoBehaviour {
 
         }
         catch {
-            Debug.Log("已超出樂譜長度");
+            Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
         }
 
 
@@ -145,7 +146,7 @@ public class DJ : MonoBehaviour {
     {
         
         loadNotes.myEveryNotes = new EveryNotes[9999];
-        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "tryMani.json"));
+        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "intro.json"));
         loadJson = file.ReadToEnd();
         file.Close();
 
@@ -171,17 +172,16 @@ public class DJ : MonoBehaviour {
                 Instantiate(laser);
                 Debug.Log("雷射!");
             }
+            else if (_attackType == "laserDouble")
+            {
+                Instantiate(laser);
+                Instantiate(laser);
+                Instantiate(laser);
+            }
             else if (_attackType == "laserMany")
             {
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
-                Instantiate(laserSlow);
+                Instantiate(fullScreenLRLaser);
+
 
             }
             noteCount += 1;
