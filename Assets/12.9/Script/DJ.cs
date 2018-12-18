@@ -130,7 +130,7 @@ public class DJ : MonoBehaviour {
             totalBeatCount += 1;
 
 
-            bpmText.text = totalBeatCount + "   " + (totalBeatCount / 4) / 4 + "   " + totalBeatCount / 4 % 4 + "   " + totalBeatCount % 4 + "";
+            //bpmText.text = totalBeatCount + "   " + (totalBeatCount / 4) / 4 + "   " + totalBeatCount / 4 % 4 + "   " + totalBeatCount % 4 + "";
 
 
         }

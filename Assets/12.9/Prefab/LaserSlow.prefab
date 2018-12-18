@@ -58,7 +58,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 3
 --- !u!114 &114670300489595018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeOutSpeed: 0.003
 --- !u!120 &120823444676034166
 LineRenderer:
   m_ObjectHideFlags: 1
