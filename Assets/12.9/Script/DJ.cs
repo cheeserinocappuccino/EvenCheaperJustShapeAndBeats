@@ -15,7 +15,7 @@ public class EveryNotes
     
     public int beatCount;
     public int earlyWarning;
-    public string attackType;
+    public string[] attackType;
 
 
 
@@ -68,6 +68,8 @@ public class DJ : MonoBehaviour {
     string loadJson;
     int totalmeasure;
     int noteCount;
+
+
 
 
     void Awake () {
@@ -146,7 +148,7 @@ public class DJ : MonoBehaviour {
     {
         
         loadNotes.myEveryNotes = new EveryNotes[9999];
-        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "intro.json"));
+        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "intro2.json"));
         loadJson = file.ReadToEnd();
         file.Close();
 
@@ -163,27 +165,39 @@ public class DJ : MonoBehaviour {
     }
 
 
-    public void Attack(int _beatCount, int _earlyWarning, string _attackType)
+    public void Attack(int _beatCount, int _earlyWarning, string[] _attackType)
     {
+        if (_beatCount + _earlyWarning == totalBeatCount)
+        {
+
+
+        }
+
+
         if (_beatCount == totalBeatCount)
         {
-            if (_attackType == "laser")
+
+            for (int i = 0; i < _attackType.Length; i++)
             {
-                Instantiate(laser);
-                Debug.Log("雷射!");
-            }
-            else if (_attackType == "laserDouble")
-            {
-                Instantiate(laser);
-                Instantiate(laser);
-                Instantiate(laser);
-            }
-            else if (_attackType == "laserMany")
-            {
-                Instantiate(fullScreenLRLaser);
+                if (_attackType[i] == "laser")
+                {
+                    Instantiate(laser);
+                    Debug.Log("雷射!");
+                }
+                else if (_attackType[i] == "laserDouble")
+                {
+                    Instantiate(laser);
+                    Instantiate(laser);
+                    Instantiate(laser);
+                }
+                else if (_attackType[i] == "laserMany")
+                {
+                    Instantiate(fullScreenLRLaser);
 
 
+                }
             }
+            
             noteCount += 1;
         }
 

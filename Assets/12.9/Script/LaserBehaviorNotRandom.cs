@@ -79,7 +79,7 @@ public class LaserBehaviorNotRandom: MonoBehaviour
         // 將腳本附掛的物件位置移到現在的邊界上的隨機點;
 
 
-        transform.position = new Vector3(spawnX, transform.position.y, spawnz);
+        transform.position = new Vector3(spawnX, transform.position.y + ((spawnYTop + spawnYMin)/2), spawnz);
 
 
 
