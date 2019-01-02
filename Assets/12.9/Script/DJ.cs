@@ -39,6 +39,15 @@ public class Notesheet {
 
 }
 
+[System.Serializable]
+public class AttackTypes {
+
+    
+    public GameObject topRandomlaser; // 頂端隨機雷射物件
+    public GameObject squareLaser; // 自訂位置雷射物件(方形)
+
+}
+
 
 
 public class DJ : MonoBehaviour {
@@ -51,26 +60,46 @@ public class DJ : MonoBehaviour {
     private AudioSource theMainSongAudioSource;
     private float lastBeat;
     public float quarterNoteTime;
+    public GameObject floor;
+    public GameObject beatCircle;
 
     public float beatOffset;
     // 測試節奏用的TExt
     public Text bpmText;
-    private int totalBeatCount;
+    public static int totalBeatCount;
+    int _lastBeatCountsimple = -1; // 給節奏圈不要重複跑用的
+    bool musicPlay = false; // 給音樂不要重複跑用的
 
-    // 雷射物件
-    public GameObject laser;
-    public GameObject laserSlow;
-    public GameObject fullScreenLRLaser;
+
 
     // 讀樂譜用的變數
     Notesheet loadNotes = new Notesheet();
+    Notesheet loadNotesFloor = new Notesheet(); // 讀簡單譜用的
     StreamReader file;
+    StreamReader fileFloor; // 讀簡單譜用的
     string loadJson;
+    string loadJsonFloor; // 讀簡單譜用的
     int totalmeasure;
     int noteCount;
+    int noteCountSimple;
+
+    //生成平台的位置
+    public Transform floorCreater;
+    public float firstFloorY,secondFloorY;
+
+    // 去抓第一個平台的位置
+    public GameObject theLastFloor;
+    public GameObject nowTargetFloor;
 
 
+    // 分數text
+    public Text scoreText;
+    public static int score;
 
+    public AttackTypes myAttackTypes = new AttackTypes();
+
+    // 別一開始就跑
+    public bool gameStart = false;
 
     void Awake () {
         theMainSongAudioSource = GetComponent<AudioSource>();
@@ -80,35 +109,59 @@ public class DJ : MonoBehaviour {
         WhatisThis();
         totalmeasure = 0;
         noteCount = 0;
+        noteCountSimple = 0;
 
-        Debug.Log(loadNotes.myEveryNotes.Length);
-        
+        //Debug.Log(loadNotes.myEveryNotes.Length);
+        theLastFloor = floorCreater.gameObject;
+        nowTargetFloor = theLastFloor;
+
+        score = 0;
+        scoreText.text = string.Format("{0:00}", score);
 	}
 
 
 
     void FixedUpdate () {
 
-
-
-        // 如果該節有被標記才跑?
-        BeatCount();
-
-        totalmeasure = totalBeatCount / 32;
-
-        try
+        if (Input.GetKey(KeyCode.T))
         {
-            Attack(loadNotes.myEveryNotes[noteCount].beatCount, loadNotes.myEveryNotes[noteCount].earlyWarning, loadNotes.myEveryNotes[noteCount].attackType);
-
-        }
-        catch {
-            Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
+            gameStart = true;
         }
 
+        // 
+        if (gameStart == true)
+        {
+            if (musicPlay == false)
+            {
+                theMainSongAudioSource.Play();
+                musicPlay = true;
+            }
+            BeatCount();
+            
 
-        
-        
-        
+            totalmeasure = totalBeatCount / 32;
+
+            try
+            {
+                Attack(loadNotes.myEveryNotes[noteCount].beatCount, loadNotes.myEveryNotes[noteCount].earlyWarning, loadNotes.myEveryNotes[noteCount].attackType);
+
+            }
+            catch
+            {
+                Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
+            }
+
+            try
+            {
+                BeatCircleBehave(loadNotesFloor.myEveryNotes[noteCountSimple].beatCount, 8);
+            }
+            catch
+            {
+                Debug.Log("簡單譜出錯");
+            }
+
+
+        }
     }
 
 
@@ -148,17 +201,17 @@ public class DJ : MonoBehaviour {
     {
         
         loadNotes.myEveryNotes = new EveryNotes[9999];
-        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "intro2.json"));
+        loadNotesFloor.myEveryNotes = new EveryNotes[9999];
+        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "trySecondAttack.json"));
+        fileFloor = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "Simple.json"));
         loadJson = file.ReadToEnd();
+        loadJsonFloor = fileFloor.ReadToEnd();
         file.Close();
+        fileFloor.Close();
+        
 
         loadNotes = JsonUtility.FromJson<Notesheet>(loadJson); // 手動讀這一層就好 下一層交給Notes class中的myMeasurements 因為命名一樣的關係json會自動讀到
-
-       //loadNotes.myMeasurements = JsonUtility.FromJson<Measurements[]>(loadJson);  //我操直接加個中掛號就沒事了喔
-        //myMeasurements = JsonUtility.FromJson<Measurements>(loadJson);
-        //Debug.Log(loadNotes.myMeasurements[0].earlyWarning);
-        //Debug.Log(loadNotes.myMeasurements[0].earlyWarning);
-
+        loadNotesFloor = JsonUtility.FromJson<Notesheet>(loadJsonFloor);
 
         //命名有差 目標變數名稱跟鍵要同名 
         // 注意一下json檔案的階層數 如果讀不到可能是因為json檔多包了一階沒用的階層
@@ -167,35 +220,31 @@ public class DJ : MonoBehaviour {
 
     public void Attack(int _beatCount, int _earlyWarning, string[] _attackType)
     {
-        if (_beatCount + _earlyWarning == totalBeatCount)
-        {
-
-
-        }
-
-
-        if (_beatCount == totalBeatCount)
+        //Debug.Log((_beatCount - _earlyWarning) + "   " + totalBeatCount);
+        
+        
+        if (totalBeatCount == _beatCount - _earlyWarning || _beatCount == 0)
         {
 
             for (int i = 0; i < _attackType.Length; i++)
             {
                 if (_attackType[i] == "laser")
                 {
-                    Instantiate(laser);
-                    Debug.Log("雷射!");
+                    Instantiate(myAttackTypes.topRandomlaser);
+                 
                 }
                 else if (_attackType[i] == "laserDouble")
                 {
-                    Instantiate(laser);
-                    Instantiate(laser);
-                    Instantiate(laser);
+                    Instantiate(myAttackTypes.topRandomlaser);
+            
                 }
                 else if (_attackType[i] == "laserMany")
                 {
-                    Instantiate(fullScreenLRLaser);
+                    Instantiate(myAttackTypes.squareLaser);
 
 
                 }
+                
             }
             
             noteCount += 1;
@@ -204,7 +253,54 @@ public class DJ : MonoBehaviour {
         //Debug.Log(loadNotes.myMeasurements[measure].beatCount);
     }
 
-    
+    public void BeatCircleBehave(int _beatCount, int _earlyWarning)
+    {
+        
+        
+        if (totalBeatCount == _beatCount || _beatCount == 0)
+        {
+            //theLastFloor = GameObject.FindGameObjectWithTag
+            if (_beatCount == 0)
+            {
+                noteCountSimple += 1;
+            }
+            else
+            {
+                
+               nowTargetFloor = Instantiate(floor, new Vector3(theLastFloor.transform.position.x, theLastFloor.transform.position.y - 7, theLastFloor.transform.position.z), transform.rotation);
+                noteCountSimple += 1;
+            }
+        }
+        //Debug.Log(totalBeatCount + "  " + _beatCount);
+        if (totalBeatCount == _beatCount - _earlyWarning || _beatCount == 0 )
+        {
+            
+            if (_beatCount != 0 && _lastBeatCountsimple != _beatCount)
+            {
+                Instantiate(beatCircle);
+               
+                _lastBeatCountsimple = _beatCount;// 存入現在的_beatcount讓他不要同一拍重複生成
+            }
+            
 
-    
+        }
+        
+
+
+
+    }
+
+    public  void ScoreChange(int _score)
+    {
+        score += _score;
+        if (score < 0)
+        {
+            score = 0;
+        }
+        scoreText.text = string.Format("{0:00}",score);
+        scoreText.GetComponent<Animator>().SetTrigger("Plussing");
+
+    }
+
+
 }

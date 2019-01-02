@@ -15,7 +15,7 @@ public class Fading : MonoBehaviour {
 	void Update () {
         fadeOutSpeed += Time.deltaTime;
         Color m_color = Color.Lerp(new Color(1f, 1f, 1f, 1f), new Color(0f, 0f, 0f, 0f), fadeOutSpeed);
-        Debug.Log(m_color);
+        //Debug.Log(m_color);
         line.materials[0].SetColor("_TintColor", m_color);
         line.materials[1].SetColor("_TintColor", m_color);
         line.materials[2].SetColor("_TintColor", m_color);

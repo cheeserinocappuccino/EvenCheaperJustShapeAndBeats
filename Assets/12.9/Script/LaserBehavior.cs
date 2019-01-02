@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LaserBehavior : MonoBehaviour {
-    //public float leftBoundary, rightBoundary, topBoundary, downBoundary,zBoundary;
 
-    //public GameObject originalLaser;
     public GameObject gameController; // 存放目前動態邊界的物件;
-    //public GameObject cloneLaser;
+    private GameObject earlyWarningObject;
+    private CreateEarlyWarning mycreateEarlywarning;
 
     private float spawnYTop, spawnYMin, spawnX, spawnz; // 這個物件生成時會移動到這些變數所存的位置;
 
@@ -23,17 +22,27 @@ public class LaserBehavior : MonoBehaviour {
     public float explodeSpeed; // 類似smooothCam的/25 值越大越慢
     private float x; // 雷射的position當下的x值
 
-    public int ealyWarning = 4;
+    public int ealyWarning ;
 
 
     public GameObject thisSelf; // 刪除的時候刪除自己
     public float dieSpeed;
 	// Use this for initialization
 	void Awake () {
+        earlyWarningObject = transform.parent.gameObject;
+        mycreateEarlywarning = earlyWarningObject.GetComponent<CreateEarlyWarning>();
+        transform.position = earlyWarningObject.transform.position;
+        laserTargetLength = mycreateEarlywarning.laserTargetLength;
+
         thisSelf = this.gameObject;
-        SpawnBehave();
         laser = GetComponent<LineRenderer>();
+       
+        //SpawnBehave();
         x = 0;
+
+
+
+
 
         Destroy(thisSelf,dieSpeed); // 感覺這個要對拍但目前先這樣;
 	}
@@ -42,8 +51,13 @@ public class LaserBehavior : MonoBehaviour {
 	void Update () {
         if (laser.GetPosition(1).x != laserTargetLength)
         {
-            x += (laserTargetLength - laser.GetPosition(1).x) / explodeSpeed;
-            laser.SetPosition(1, new Vector3(x, 0, 0));
+            x += (laserTargetLength - laser.GetPosition(1).y) / explodeSpeed;
+
+            if (mycreateEarlywarning.isBothSided == true)
+            {
+                laser.SetPosition(0, new Vector3(0, -x, 0));
+            }
+            laser.SetPosition(1, new Vector3(0, x, 0));
 
 
         }

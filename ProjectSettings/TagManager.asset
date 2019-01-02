@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bones
+  - DJ
+  - Floor
+  - Camera
   layers:
   - Default
   - TransparentFX

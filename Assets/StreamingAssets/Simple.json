@@ -1,0 +1,60 @@
+{
+  "myEveryNotes": [
+    {
+      "beatCount": 0,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    {
+      "beatCount": 8,
+      "earlyWarning": 4,
+      "attackType": ["laser","laser","laser","laser","laser","laser","laser","laser"]
+    },
+    {
+      "beatCount": 16,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    
+    {
+      "beatCount": 24,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    {
+      "beatCount": 32,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    {
+      "beatCount": 40,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    {
+      "beatCount": 48,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+    {
+      "beatCount": 56,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+        {
+      "beatCount": 64,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+        {
+      "beatCount": 72,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    },
+        {
+      "beatCount": 80,
+      "earlyWarning": 4,
+      "attackType": ["laser"]
+    }
+     ]
+}

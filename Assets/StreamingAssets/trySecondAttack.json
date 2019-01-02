@@ -121,16 +121,16 @@
       "earlyWarning": 4,
       "attackType": ["laser"]
     },
-        {
-      "beatCount": 128,
+          {
+      "beatCount": 126,
       "earlyWarning": 4,
-      "attackType": ["laserMany"]
+      "attackType": ["laser"]
     },
-    
+
         {
       "beatCount": 132,
-      "earlyWarning": 4,
-      "attackType": ["laserDouble"]
+      "earlyWarning": 8,
+      "attackType": ["laserMany"]
     },
         {
       "beatCount": 138,
