@@ -7,6 +7,7 @@ public class CreateEarlyWarning : MonoBehaviour {
     private DJ thedjScript;
 
     private int startUpBeatCount;
+    private bool isFading = false; // 生成傷害後預警物件慢慢消失
     public int earlyWarningBeat;
 
 
@@ -57,15 +58,22 @@ public class CreateEarlyWarning : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(DJ.totalBeatCount - (startUpBeatCount) == earlyWarningBeat)
+        if (DJ.totalBeatCount - (startUpBeatCount) == earlyWarningBeat)
         {
             transform.GetChild(0).gameObject.SetActive(true);
-
+            isFading = true;
             
 
         }
-        alphaColor.a = Mathf.Lerp(alphaColor.a, 0.5f, 1.5f * Time.deltaTime);
 
+        if (isFading == false)
+        {
+            alphaColor.a = Mathf.Lerp(alphaColor.a, 0.5f, 1.0f * Time.deltaTime);
+        }
+        else if (isFading == true)
+        {
+            alphaColor.a = 0.0f;
+        }
         this.GetComponent<MeshRenderer>().material.color = alphaColor;
         //this.GetComponent<MeshRenderer>().material.color = Color.Lerp( alphaColor, this.GetComponent<MeshRenderer>().material.color, 20f * Time.deltaTime);
 

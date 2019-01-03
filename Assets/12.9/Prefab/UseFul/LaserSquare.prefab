@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSpeed: 0.01
+  fadeOutSpeed: 0.005
 --- !u!114 &114094883030504080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSpeed: 0.01
+  fadeOutSpeed: 0.005
 --- !u!114 &114113004943573598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -605,7 +605,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   laserLength: 30
   laserTargetLength: 0
-  dieSpeed: 1
+  dieSpeed: 1.5
   isRandom: 0
   isBothSided: 1
 --- !u!114 &114255142279577260
@@ -624,7 +624,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 1.5
 --- !u!114 &114377540653643960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSpeed: 0.01
+  fadeOutSpeed: 0.005
 --- !u!114 &114419562958133562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSpeed: 0.01
+  fadeOutSpeed: 0.005
 --- !u!114 &114477428438760932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -665,7 +665,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 1.5
 --- !u!114 &114516014400027524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -694,7 +694,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 1.5
 --- !u!114 &114535017920126304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -711,7 +711,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 1.5
 --- !u!114 &114576406325950348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -727,7 +727,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   laserLength: 30
   laserTargetLength: 0
-  dieSpeed: 1
+  dieSpeed: 1.5
   isRandom: 0
   isBothSided: 1
 --- !u!114 &114631310526219740
@@ -745,7 +745,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   laserLength: 30
   laserTargetLength: 0
-  dieSpeed: 1
+  dieSpeed: 1.5
   isRandom: 0
   isBothSided: 1
 --- !u!114 &114743638887302908
@@ -774,7 +774,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   laserLength: 30
   laserTargetLength: 0
-  dieSpeed: 1
+  dieSpeed: 1.5
   isRandom: 0
   isBothSided: 1
 --- !u!114 &114835452771931958
@@ -793,7 +793,7 @@ MonoBehaviour:
   explodeSpeed: 3
   ealyWarning: 4
   thisSelf: {fileID: 0}
-  dieSpeed: 1
+  dieSpeed: 1.5
 --- !u!114 &114848661656419388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -809,7 +809,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   laserLength: 30
   laserTargetLength: 0
-  dieSpeed: 1
+  dieSpeed: 1.5
   isRandom: 0
   isBothSided: 1
 --- !u!114 &114921093969783568
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f15041553b30408a9892f1d17bb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSpeed: 0.01
+  fadeOutSpeed: 0.005
 --- !u!120 &120166258161892214
 LineRenderer:
   m_ObjectHideFlags: 1

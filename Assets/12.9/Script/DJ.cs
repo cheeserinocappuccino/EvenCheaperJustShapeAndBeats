@@ -202,8 +202,8 @@ public class DJ : MonoBehaviour {
         
         loadNotes.myEveryNotes = new EveryNotes[9999];
         loadNotesFloor.myEveryNotes = new EveryNotes[9999];
-        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "trySecondAttack.json"));
-        fileFloor = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "Simple.json"));
+        file = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "TitanNotes.json"));
+        fileFloor = new StreamReader(System.IO.Path.Combine(Application.streamingAssetsPath, "simple.json"));
         loadJson = file.ReadToEnd();
         loadJsonFloor = fileFloor.ReadToEnd();
         file.Close();

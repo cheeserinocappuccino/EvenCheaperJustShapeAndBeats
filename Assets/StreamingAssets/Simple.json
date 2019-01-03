@@ -3,58 +3,227 @@
     {
       "beatCount": 0,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
     {
       "beatCount": 8,
       "earlyWarning": 4,
-      "attackType": ["laser","laser","laser","laser","laser","laser","laser","laser"]
+      "attackType": [
+        "laser"
+   
+      ]
     },
     {
       "beatCount": 16,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
-    
     {
       "beatCount": 24,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
     {
       "beatCount": 32,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
     {
       "beatCount": 40,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
     {
       "beatCount": 48,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
     {
       "beatCount": 56,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
-        {
+    {
       "beatCount": 64,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
-        {
+    {
       "beatCount": 72,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
     },
-        {
+    {
       "beatCount": 80,
       "earlyWarning": 4,
-      "attackType": ["laser"]
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 88,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 96,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 104,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 112,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 120,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 128,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 136,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 144,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 152,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 160,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 168,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 176,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 184,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 192,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 200,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 208,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 216,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 224,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 232,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 240,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 248,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
     }
-     ]
+  ]
 }
