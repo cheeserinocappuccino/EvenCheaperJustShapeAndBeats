@@ -95,11 +95,14 @@ public class DJ : MonoBehaviour {
     // 分數text
     public Text scoreText;
     public static int score;
+    public GameObject scoreAndTempoUIObject;
 
     public AttackTypes myAttackTypes = new AttackTypes();
 
     // 別一開始就跑
-    public bool gameStart = false;
+    public static bool gameStart = false;
+
+    
 
     void Awake () {
         theMainSongAudioSource = GetComponent<AudioSource>();
@@ -123,9 +126,10 @@ public class DJ : MonoBehaviour {
 
     void FixedUpdate () {
 
-        if (Input.GetKey(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             gameStart = true;
+            scoreAndTempoUIObject.SetActive(true);
         }
 
         // 

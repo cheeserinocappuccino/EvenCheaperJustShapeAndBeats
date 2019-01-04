@@ -260,7 +260,8 @@ public class Switch : MonoBehaviour {
 
         if (startSong == true)
         {
-            
+
+
             // 把歌單往下移開
             for (int i = 0; i < songList.Count; i++)
             {
@@ -289,7 +290,9 @@ public class Switch : MonoBehaviour {
                 IntoSong(songList[nowSelect].sceneNum);
                 startSong = false;
             }
+
         }
     }
+
 }
 
