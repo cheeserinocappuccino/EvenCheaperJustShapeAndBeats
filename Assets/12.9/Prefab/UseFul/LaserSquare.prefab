@@ -625,6 +625,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 1.5
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!114 &114377540653643960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,6 +668,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 1.5
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!114 &114516014400027524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,6 +699,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 1.5
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!114 &114535017920126304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -712,6 +718,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 1.5
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!114 &114576406325950348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -794,6 +802,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 1.5
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!114 &114848661656419388
 MonoBehaviour:
   m_ObjectHideFlags: 1

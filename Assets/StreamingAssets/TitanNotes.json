@@ -345,21 +345,7 @@
       ]
     },
     {
-      "beatCount": 258,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 260,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 262,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -373,7 +359,14 @@
       ]
     },
     {
-      "beatCount": 268,
+      "beatCount": 266,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 270,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -387,21 +380,7 @@
       ]
     },
     {
-      "beatCount": 274,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 276,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 278,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -415,7 +394,14 @@
       ]
     },
     {
-      "beatCount": 286,
+      "beatCount": 284,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 288,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -429,13 +415,6 @@
       ]
     },
     {
-      "beatCount": 294,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 296,
       "earlyWarning": 4,
       "attackType": [
@@ -443,7 +422,7 @@
       ]
     },
     {
-      "beatCount": 300,
+      "beatCount": 298,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -464,21 +443,7 @@
       ]
     },
     {
-      "beatCount": 306,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 308,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 310,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -499,6 +464,13 @@
       ]
     },
     {
+      "beatCount": 320,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
       "beatCount": 324,
       "earlyWarning": 4,
       "attackType": [
@@ -506,14 +478,14 @@
       ]
     },
     {
-      "beatCount": 326,
+      "beatCount": 328,
       "earlyWarning": 4,
       "attackType": [
         "laser"
       ]
     },
     {
-      "beatCount": 332,
+      "beatCount": 330,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -541,21 +513,7 @@
       ]
     },
     {
-      "beatCount": 342,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 344,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 346,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -576,21 +534,7 @@
       ]
     },
     {
-      "beatCount": 354,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 356,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 358,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -625,21 +569,7 @@
       ]
     },
     {
-      "beatCount": 370,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 372,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 374,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -653,14 +583,14 @@
       ]
     },
     {
-      "beatCount": 378,
+      "beatCount": 380,
       "earlyWarning": 4,
       "attackType": [
         "laser"
       ]
     },
     {
-      "beatCount": 380,
+      "beatCount": 384,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -674,13 +604,6 @@
       ]
     },
     {
-      "beatCount": 390,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 392,
       "earlyWarning": 4,
       "attackType": [
@@ -688,7 +611,21 @@
       ]
     },
     {
-      "beatCount": 396,
+      "beatCount": 394,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 398,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 400,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -702,21 +639,7 @@
       ]
     },
     {
-      "beatCount": 406,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 408,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 410,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -730,14 +653,14 @@
       ]
     },
     {
-      "beatCount": 420,
+      "beatCount": 416,
       "earlyWarning": 4,
       "attackType": [
         "laser"
       ]
     },
     {
-      "beatCount": 422,
+      "beatCount": 420,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -751,7 +674,14 @@
       ]
     },
     {
-      "beatCount": 428,
+      "beatCount": 426,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 430,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -759,6 +689,13 @@
     },
     {
       "beatCount": 432,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 434,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -786,13 +723,6 @@
       ]
     },
     {
-      "beatCount": 442,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 444,
       "earlyWarning": 4,
       "attackType": [
@@ -800,14 +730,14 @@
       ]
     },
     {
-      "beatCount": 452,
+      "beatCount": 448,
       "earlyWarning": 4,
       "attackType": [
         "laser"
       ]
     },
     {
-      "beatCount": 454,
+      "beatCount": 452,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -828,7 +758,7 @@
       ]
     },
     {
-      "beatCount": 460,
+      "beatCount": 462,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -849,21 +779,7 @@
       ]
     },
     {
-      "beatCount": 470,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 472,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 474,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -877,7 +793,7 @@
       ]
     },
     {
-      "beatCount": 479,
+      "beatCount": 480,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -885,13 +801,6 @@
     },
     {
       "beatCount": 484,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
-      "beatCount": 486,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -912,7 +821,7 @@
       ]
     },
     {
-      "beatCount": 492,
+      "beatCount": 494,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -926,14 +835,14 @@
       ]
     },
     {
-      "beatCount": 500,
+      "beatCount": 498,
       "earlyWarning": 4,
       "attackType": [
         "laser"
       ]
     },
     {
-      "beatCount": 502,
+      "beatCount": 500,
       "earlyWarning": 4,
       "attackType": [
         "laser"
@@ -947,25 +856,27 @@
       ]
     },
     {
-      "beatCount": 506,
-      "earlyWarning": 4,
-      "attackType": [
-        "laser"
-      ]
-    },
-    {
       "beatCount": 508,
       "earlyWarning": 4,
       "attackType": [
-        "laser"
+        "laser","wifiRight"
       ]
     },
     {
-      "beatCount": 511,
+      "beatCount": 572,
       "earlyWarning": 4,
       "attackType": [
-        "laser"
+        "laser","wifiLeft"
       ]
     }
-  ]
+    ,
+    {
+      "beatCount": 636,
+      "earlyWarning": 8,
+      "attackType": [
+       "wifiMiddle"
+      ]
+    }
+]
+  
 }

@@ -27,6 +27,9 @@ public class LaserBehavior : MonoBehaviour {
 
     public GameObject thisSelf; // 刪除的時候刪除自己
     public float dieSpeed;
+
+    public GameObject laserColliderObject;
+    private BoxCollider laserCloneBoxCollider;
 	// Use this for initialization
 	void Awake () {
         earlyWarningObject = transform.parent.gameObject;
@@ -41,11 +44,17 @@ public class LaserBehavior : MonoBehaviour {
         x = 0;
 
 
+          laserCloneBoxCollider = Instantiate(laserColliderObject, new Vector3(earlyWarningObject.transform.position.x, earlyWarningObject.transform.position.y,0), transform.rotation).GetComponent<BoxCollider>();
 
+          laserCloneBoxCollider.size = new Vector3(1, 300, 0);    // 不要讓他增加好了就維持固定大小
+        
+    
 
 
         Destroy(thisSelf,dieSpeed); // 感覺這個要對拍但目前先這樣;
-	}
+        Destroy(laserCloneBoxCollider.gameObject, dieSpeed);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

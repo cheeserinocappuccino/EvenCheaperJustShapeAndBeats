@@ -31,12 +31,18 @@ public class Switch : MonoBehaviour {
 
     // loading圖示
     public Image foxInner, foxOutter;
+    public GameObject Fox;
     private float waitToLoadTimer;
     public float waitSecondToLoad;
     private bool startSong;
     public Text loadingText;
     public GameObject loadingTextObject;
     private float progress; // 讀場景的進度
+
+    // 標題畫面
+    public Image titleInner, titleOutter;
+    public Image anyKeyInner, anyKeyOutter;
+    private float a;
 
     void Start () {
 
@@ -46,6 +52,7 @@ public class Switch : MonoBehaviour {
         waitToLoadTimer = 0;
         startSong = false;
         progress = 0;
+        a = 0;
         for (int i = 0; i < songList.Count; i++)
         {
             songList[i].tartgetPos = new Vector3(2 * i, 0, 2 * i);
@@ -62,6 +69,7 @@ public class Switch : MonoBehaviour {
             PressingDetect();
             Selection();
             changeArtPos();
+            MoveOutTitle();
         }
         else
         {
@@ -94,6 +102,9 @@ public class Switch : MonoBehaviour {
         {
             
             StartCoroutine(LoadAsynchronously(_sceneNum));
+            DontDestroyOnLoad(Fox);
+            DontDestroyOnLoad(foxInner);
+            DontDestroyOnLoad(foxOutter);
         }
 
     }
@@ -294,5 +305,13 @@ public class Switch : MonoBehaviour {
         }
     }
 
+    public void MoveOutTitle()
+    {
+        a -= 1.0f;
+        titleInner.transform.position += new Vector3(a, 0, 0);
+        titleOutter.transform.position += new Vector3(a, 0, 0);
+        anyKeyInner.transform.position += new Vector3(a, 0, 0);
+        anyKeyOutter.transform.position += new Vector3(a, 0, 0);
+    }
 }
 

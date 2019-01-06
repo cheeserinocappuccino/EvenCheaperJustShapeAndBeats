@@ -55,7 +55,7 @@ Transform:
   m_GameObject: {fileID: 1978320514263828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 50, z: 1}
+  m_LocalScale: {x: 1, y: 300, z: 1}
   m_Children:
   - {fileID: 4843130899457658}
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: 67229993243afab4b8e54b4fb74d24d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -162,6 +162,8 @@ MonoBehaviour:
   ealyWarning: 4
   thisSelf: {fileID: 0}
   dieSpeed: 0.4
+  laserColliderObject: {fileID: 1017478490305796, guid: 198d355a56d45be4381181c6be8cb819,
+    type: 2}
 --- !u!120 &120918383159801544
 LineRenderer:
   m_ObjectHideFlags: 1

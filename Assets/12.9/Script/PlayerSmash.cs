@@ -20,31 +20,34 @@ public class PlayerSmash : MonoBehaviour {
     public GameObject hitGroundEffect;
 
     Vector3 force;
+
+    private MeshRenderer meshRenderer;
+
+    public float immortalTime;
+    private float setImmortalTime;
+    private AudioSource audiosource;
     void Start () {
+        setImmortalTime = immortalTime;
+        meshRenderer = GetComponent<MeshRenderer>();
         theDJObject = GameObject.FindGameObjectWithTag("DJ");
         gameController = GameObject.FindGameObjectWithTag("GameController");
         _holdBoundary = gameController.GetComponent<HoldBoundary>();
         theDJ = theDJObject.GetComponent<DJ>();
         playerRidgid = GetComponent<Rigidbody>();
         force = new Vector3(0, 0, 0);
+        audiosource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
-        
-    
+        //測試閃動
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            playerGetHurt();
+        }
+        immortalTime -= Time.deltaTime;
 
-
-
-
-
-
-
-
-
-
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && DJ.gameStart == true)
         {
             try
             {
@@ -109,21 +112,51 @@ public class PlayerSmash : MonoBehaviour {
         if (collision.gameObject.tag == "Floor")
         {
             theCollidedFloor = collision.gameObject;
-          
+
             Instantiate(hitGroundEffect, transform.position, transform.rotation);
 
             theDJ.ScoreChange(1);
+        }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            theDJ.ScoreChange(-1);
         }
 
 
 
     }
 
-    private void PlayerRush(float targetFloorY)
+    public void playerGetHurt()
     {
+        immortalTime = setImmortalTime;
+       CameraShake CameraShake = GameObject.FindGameObjectWithTag("Camera").GetComponent<CameraShake>();
 
-
+        StartCoroutine(playerFlash());
+        audiosource.Play();
+        StartCoroutine(CameraShake.Shake(0.35f, 0.35f));
+        
     }
 
+    IEnumerator playerFlash()
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            if (i % 2 == 0)
+            {
+                //meshRenderer.material.color = new Color(80, 178, 50, 1);
+                meshRenderer.material.color = new Color(meshRenderer.material.color.a, meshRenderer.material.color.b, meshRenderer.material.color.maxColorComponent, 0);
+                Debug.Log("A");
+            }
+            else if (i % 2 == 1)
+            {
+                //meshRenderer.material.color = new Color(80, 178, 50, 1);
+                meshRenderer.material.color = new Color(meshRenderer.material.color.a, meshRenderer.material.color.b, meshRenderer.material.color.maxColorComponent, 1);
+                Debug.Log("B");
+            }
+            Debug.Log("閃了 " + i + " 次");
+            yield return new WaitForSeconds(0.15f);    
+        }
+    }
 
 }
+

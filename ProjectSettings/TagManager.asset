@@ -8,6 +8,9 @@ TagManager:
   - DJ
   - Floor
   - Camera
+  - Fox
+  - FoxInner
+  - FoxOutter
   layers:
   - Default
   - TransparentFX

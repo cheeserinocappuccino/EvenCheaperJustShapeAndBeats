@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3ee7e0bc2232bf54bab92a8e18fd407c
+timeCreated: 1546701463
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neon Vortex
+  fontNames:
+  - Neon Vortex
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

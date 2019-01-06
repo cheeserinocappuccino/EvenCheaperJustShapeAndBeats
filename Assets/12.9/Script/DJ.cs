@@ -45,6 +45,7 @@ public class AttackTypes {
     
     public GameObject topRandomlaser; // 頂端隨機雷射物件
     public GameObject squareLaser; // 自訂位置雷射物件(方形)
+    public GameObject wifiRight, wifiLeft, wifiMiddle;
 
 }
 
@@ -99,12 +100,23 @@ public class DJ : MonoBehaviour {
 
     public AttackTypes myAttackTypes = new AttackTypes();
 
+
     // 別一開始就跑
     public static bool gameStart = false;
+    private float gameStartTimer;
+    public float gameStartSecond;
+    private bool dontKeepRunning;
 
+    // 移開LOADING UI
+    private Image foxInner, foxOutter;
+    private float a;
+
+    //wifi抓生成位置
+    private GameObject camera;
     
 
     void Awake () {
+        camera = GameObject.FindGameObjectWithTag("Camera");
         theMainSongAudioSource = GetComponent<AudioSource>();
         lastBeat = 0 + beatOffset;
         totalBeatCount = 0;
@@ -113,25 +125,36 @@ public class DJ : MonoBehaviour {
         totalmeasure = 0;
         noteCount = 0;
         noteCountSimple = 0;
-
+        gameStart = false;
+        dontKeepRunning = false;
         //Debug.Log(loadNotes.myEveryNotes.Length);
-        theLastFloor = floorCreater.gameObject;
+        //theLastFloor = floorCreater.gameObject;
         nowTargetFloor = theLastFloor;
 
         score = 0;
         scoreText.text = string.Format("{0:00}", score);
-	}
+
+        // 
+        try
+        {
+            foxInner = GameObject.FindGameObjectWithTag("FoxInner").GetComponent<Image>();
+            foxOutter = GameObject.FindGameObjectWithTag("FoxOutter").GetComponent<Image>();
+        }
+        catch
+        {
+
+        }
+        
+        }
 
 
 
     void FixedUpdate () {
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            gameStart = true;
-            scoreAndTempoUIObject.SetActive(true);
-        }
 
+
+
+        
         // 
         if (gameStart == true)
         {
@@ -166,6 +189,24 @@ public class DJ : MonoBehaviour {
 
 
         }
+    }
+
+    private void Update()
+    {
+
+
+        gameStartTimer += Time.deltaTime;
+        if (gameStartTimer >= gameStartSecond && dontKeepRunning == false)
+        {
+            gameStart = true;
+            scoreAndTempoUIObject.SetActive(true);
+            dontKeepRunning = true;
+        }
+        
+        
+        MoveLoading();
+        
+        
     }
 
 
@@ -235,18 +276,30 @@ public class DJ : MonoBehaviour {
                 if (_attackType[i] == "laser")
                 {
                     Instantiate(myAttackTypes.topRandomlaser);
-                 
+
                 }
                 else if (_attackType[i] == "laserDouble")
                 {
                     Instantiate(myAttackTypes.topRandomlaser);
-            
+
                 }
                 else if (_attackType[i] == "laserMany")
                 {
                     Instantiate(myAttackTypes.squareLaser);
 
 
+                }
+                else if (_attackType[i] == "wifiRight")
+                {
+                    Instantiate(myAttackTypes.wifiRight, new Vector3(0, camera.transform.position.y, 0), myAttackTypes.wifiRight.transform.rotation);
+                }
+                else if (_attackType[i] == "wifiLeft")
+                {
+                    Instantiate(myAttackTypes.wifiLeft, new Vector3(0, camera.transform.position.y, 0), myAttackTypes.wifiLeft.transform.rotation);
+                }
+                else if (_attackType[i] == "wifiMiddle")
+                {
+                    Instantiate(myAttackTypes.wifiMiddle, new Vector3(0, camera.transform.position.y, 0), myAttackTypes.wifiLeft.transform.rotation);
                 }
                 
             }
@@ -302,9 +355,23 @@ public class DJ : MonoBehaviour {
             score = 0;
         }
         scoreText.text = string.Format("{0:00}",score);
-        scoreText.GetComponent<Animator>().SetTrigger("Plussing");
-
+        if (_score > 0)
+        {
+            scoreText.GetComponent<Animator>().SetTrigger("Plussing");
+        }
+        else if (_score < 0)
+        {
+            scoreText.GetComponent<Animator>().SetTrigger("Minussing");
+        }
     }
 
-
+    public void MoveLoading()
+    {
+        a -= 1.0f;
+        if (foxInner != null && foxOutter != null)
+        {
+            foxInner.transform.position += new Vector3(0, a, 0);
+            foxOutter.transform.position += new Vector3(0, a, 0);
+        }
+    }
 }

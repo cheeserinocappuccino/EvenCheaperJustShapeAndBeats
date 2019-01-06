@@ -13,17 +13,25 @@ public class WifiWarning : MonoBehaviour {
     public float poptimerInterval;
     private int a;
 
-
+    private GameObject camera;
+    private HoldBoundary holdBoundary;
     void Awake()
     {
+        camera = GameObject.FindGameObjectWithTag("Camera");
+        holdBoundary = camera.GetComponent<HoldBoundary>();
+        
         startUpBeatCount = DJ.totalBeatCount;
         childNum = transform.childCount;
         Debug.Log(childNum);
         a = 0;
  
     }
+    private void Start()
+    {
+        //this.transform.position = new Vector3(transform.position.x, holdBoundary.downBoundary, transform.position.z);
+    }
 
- 
+
     void Update()
     {
 

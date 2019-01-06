@@ -75,7 +75,7 @@ public class CreateEarlyWarning : MonoBehaviour {
             alphaColor.a = 0.0f;
         }
         this.GetComponent<MeshRenderer>().material.color = alphaColor;
-        //this.GetComponent<MeshRenderer>().material.color = Color.Lerp( alphaColor, this.GetComponent<MeshRenderer>().material.color, 20f * Time.deltaTime);
+        
 
     }
 
