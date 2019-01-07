@@ -41,6 +41,7 @@ public class FloorFlash : MonoBehaviour {
             
             theDjscript.nowTargetFloor = null;
             Destroy(transform.parent.gameObject);
+            DJ.floorExist = false; // 用來判斷玩家是否在拍上
             Destroy(itSelf);
 
         }
@@ -65,7 +66,7 @@ public class FloorFlash : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             iftouched  = 1;
-
+            DJ.floorExist = false;
            //nextFloorGeneratePos = new Vector3(transform.position.x,transform.position.y - 8, transform.position.z);
             theDjscript.theLastFloor = this.gameObject;
         }

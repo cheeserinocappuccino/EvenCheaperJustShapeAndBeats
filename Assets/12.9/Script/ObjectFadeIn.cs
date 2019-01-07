@@ -7,7 +7,7 @@ public class ObjectFadeIn : MonoBehaviour {
     private Color alphaColor;
 
     public float startAlpha = 0.0f;
-    public float maxAlpha = 0.2f;
+    public float maxAlpha ;
     public float fadeInspeed = 2.0f;
   
 

@@ -138,6 +138,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iftouched: 0
   nowTime: 0
-  timeToDie: 0.4
+  timeToDie: 0.2
   fadespeed: 5
   nextFloorGeneratePos: {x: 0, y: 0, z: 0}

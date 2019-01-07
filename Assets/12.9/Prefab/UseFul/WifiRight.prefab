@@ -369,12 +369,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: ea06547370a491f4dad30ee07b1fe3ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -403,12 +403,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: ea06547370a491f4dad30ee07b1fe3ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -437,12 +437,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: ea06547370a491f4dad30ee07b1fe3ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -471,12 +471,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: ea06547370a491f4dad30ee07b1fe3ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -505,12 +505,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f8cd6c90c1d6d4aa7cd467104c9b15, type: 2}
+  - {fileID: 2100000, guid: ea06547370a491f4dad30ee07b1fe3ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114124783595094166
 MonoBehaviour:
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114610921742324946
 MonoBehaviour:
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114677503521970240
 MonoBehaviour:
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114761643868987636
 MonoBehaviour:
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!120 &120194990718412102
 LineRenderer:

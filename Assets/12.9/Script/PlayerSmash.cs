@@ -40,15 +40,21 @@ public class PlayerSmash : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       // Debug.Log(DJ.floorExist);
         //測試閃動
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            playerGetHurt();
-        }
-        immortalTime -= Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump") && DJ.gameStart == true)
+        immortalTime -= Time.deltaTime;
+        /*if (theDJ.nowTargetFloor == null && Input.GetButtonDown("Jump"))
         {
+            PlayerNotOnTempo();
+
+        }*/
+        if (Input.GetButtonDown("Jump") && DJ.gameStart == true && theDJ.nowTargetFloor != null)
+        {
+            /*if (theDJ.nowTargetFloor == null)
+            {
+                playerGetHurt();
+            }*/
             try
             {
                 Physics.IgnoreCollision(theCollidedFloor.GetComponent<Collider>(), GetComponent<Collider>(), true);
@@ -76,15 +82,18 @@ public class PlayerSmash : MonoBehaviour {
                     nextTargetedFloorFlash = theDJ.nowTargetFloor.GetComponent<FloorFlash>();
                     nextTargetedFloorFlash.iftouched = 1;
                 }
+
             }
             catch
             {
-                Debug.Log("你死了");
+                //Debug.Log("你死了");
+                
 
             }
 
         }
         else {
+
             moveHorizontal = Input.GetAxis("Horizontal");
             force = new Vector3(moveHorizontal, 0, 0);
             
@@ -137,6 +146,16 @@ public class PlayerSmash : MonoBehaviour {
         
     }
 
+    public void PlayerNotOnTempo()
+    {
+        CameraShake CameraShake = GameObject.FindGameObjectWithTag("Camera").GetComponent<CameraShake>();
+
+        //StartCoroutine(playerFlash());
+        audiosource.Play();
+        StartCoroutine(CameraShake.Shake(0.35f, 0.35f));
+        theDJ.ScoreChange(-1);
+    }
+
     IEnumerator playerFlash()
     {
         for(int i = 0; i < 10; i++)
@@ -145,15 +164,15 @@ public class PlayerSmash : MonoBehaviour {
             {
                 //meshRenderer.material.color = new Color(80, 178, 50, 1);
                 meshRenderer.material.color = new Color(meshRenderer.material.color.a, meshRenderer.material.color.b, meshRenderer.material.color.maxColorComponent, 0);
-                Debug.Log("A");
+                //Debug.Log("A");
             }
             else if (i % 2 == 1)
             {
                 //meshRenderer.material.color = new Color(80, 178, 50, 1);
                 meshRenderer.material.color = new Color(meshRenderer.material.color.a, meshRenderer.material.color.b, meshRenderer.material.color.maxColorComponent, 1);
-                Debug.Log("B");
+                //Debug.Log("B");
             }
-            Debug.Log("閃了 " + i + " 次");
+           // Debug.Log("閃了 " + i + " 次");
             yield return new WaitForSeconds(0.15f);    
         }
     }

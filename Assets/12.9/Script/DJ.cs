@@ -46,6 +46,7 @@ public class AttackTypes {
     public GameObject topRandomlaser; // 頂端隨機雷射物件
     public GameObject squareLaser; // 自訂位置雷射物件(方形)
     public GameObject wifiRight, wifiLeft, wifiMiddle;
+    public GameObject leftEye, rightEye;
 
 }
 
@@ -113,9 +114,12 @@ public class DJ : MonoBehaviour {
 
     //wifi抓生成位置
     private GameObject camera;
-    
+
+    // 下一層不存在時 玩家案空白建會扣分
+    public static bool floorExist;
 
     void Awake () {
+        floorExist = false;
         camera = GameObject.FindGameObjectWithTag("Camera");
         theMainSongAudioSource = GetComponent<AudioSource>();
         lastBeat = 0 + beatOffset;
@@ -175,7 +179,7 @@ public class DJ : MonoBehaviour {
             }
             catch
             {
-                Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
+                //Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
             }
 
             try
@@ -184,7 +188,7 @@ public class DJ : MonoBehaviour {
             }
             catch
             {
-                Debug.Log("簡單譜出錯");
+                //Debug.Log("簡單譜出錯");
             }
 
 
@@ -301,6 +305,17 @@ public class DJ : MonoBehaviour {
                 {
                     Instantiate(myAttackTypes.wifiMiddle, new Vector3(0, camera.transform.position.y, 0), myAttackTypes.wifiLeft.transform.rotation);
                 }
+                else if (_attackType[i] == "teacherEntered")
+                {
+                    TeacherGoOff.letTeacherGo = true;
+
+                }
+                else if (_attackType[i] == "teacherStartAttack")
+                {
+                    GameObject.FindGameObjectWithTag("Teacher").GetComponent<CameraFollow>().speed = 1;
+                    myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = true;
+                    Debug.Log(myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate);
+                }
                 
             }
             
@@ -312,9 +327,9 @@ public class DJ : MonoBehaviour {
 
     public void BeatCircleBehave(int _beatCount, int _earlyWarning)
     {
-        
-        
-        if (totalBeatCount == _beatCount || _beatCount == 0)
+
+
+        if (totalBeatCount == _beatCount - 1 || _beatCount == 0)
         {
             //theLastFloor = GameObject.FindGameObjectWithTag
             if (_beatCount == 0)
@@ -323,11 +338,15 @@ public class DJ : MonoBehaviour {
             }
             else
             {
-                
-               nowTargetFloor = Instantiate(floor, new Vector3(theLastFloor.transform.position.x, theLastFloor.transform.position.y - 7, theLastFloor.transform.position.z), transform.rotation);
+                floorExist = true;
+                nowTargetFloor = Instantiate(floor, new Vector3(theLastFloor.transform.position.x, theLastFloor.transform.position.y - 7, theLastFloor.transform.position.z), transform.rotation);
                 noteCountSimple += 1;
             }
         }
+        else
+        {
+            
+        } 
         //Debug.Log(totalBeatCount + "  " + _beatCount);
         if (totalBeatCount == _beatCount - _earlyWarning || _beatCount == 0 )
         {

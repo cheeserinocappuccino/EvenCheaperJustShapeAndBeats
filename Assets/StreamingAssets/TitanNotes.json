@@ -876,6 +876,20 @@
       "attackType": [
        "wifiMiddle"
       ]
+    }    ,
+    {
+      "beatCount": 708,
+      "earlyWarning": 4,
+      "attackType": [
+       "teacherEntered"
+      ]
+    },
+    {
+      "beatCount": 768,
+      "earlyWarning": 4,
+      "attackType": [
+        "teacherStartAttack"
+      ]
     }
 ]
   

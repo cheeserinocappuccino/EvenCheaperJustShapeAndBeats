@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114219337989541412
 MonoBehaviour:
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114247652879620110
 MonoBehaviour:
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114437634405369244
 MonoBehaviour:
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114799710154504716
 MonoBehaviour:
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAlpha: 0
-  maxAlpha: 0.2
+  maxAlpha: 0.7
   fadeInspeed: 2
 --- !u!114 &114897266645431582
 MonoBehaviour:

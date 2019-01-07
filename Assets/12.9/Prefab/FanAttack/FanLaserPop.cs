@@ -43,7 +43,11 @@ public class FanLaserPop : MonoBehaviour {
         if (DJ.totalBeatCount - wifiWarning.startUpBeatCount >= earlyWaningBeat)
         {
             isPop = true;
-            this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().material.color = new Color(0, 0, 0, 0);
+            /*
+            this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().material.color = new Color(this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().material.color.r,
+                this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().material.color.g,
+                this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().material.color.b, 0);*/
+            this.gameObject.transform.parent.gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         
         if (isPop == true)

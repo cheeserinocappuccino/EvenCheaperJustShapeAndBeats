@@ -22,7 +22,7 @@ public class WifiWarning : MonoBehaviour {
         
         startUpBeatCount = DJ.totalBeatCount;
         childNum = transform.childCount;
-        Debug.Log(childNum);
+        //Debug.Log(childNum);
         a = 0;
  
     }
