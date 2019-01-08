@@ -24,6 +24,7 @@ public class CountScore : MonoBehaviour {
     public AudioClip beepAudioClip;
     void Start () {
         beepSoundAudio =beepSound.GetComponent<AudioSource>();
+        
         theScoreData = GameObject.FindGameObjectWithTag("GameController").GetComponent<HoldData>();
         totalGothitScore = HoldData.gotHitTimes;
         totalFloorForwardScore = HoldData.floorCount;
