@@ -47,6 +47,7 @@ public class AttackTypes {
     public GameObject squareLaser; // 自訂位置雷射物件(方形)
     public GameObject wifiRight, wifiLeft, wifiMiddle;
     public GameObject leftEye, rightEye;
+    public GameObject fingerLaser;
 
 }
 
@@ -117,6 +118,9 @@ public class DJ : MonoBehaviour {
 
     // 下一層不存在時 玩家案空白建會扣分
     public static bool floorExist;
+
+    // 手指的實例
+    private GameObject fingerLaserClone;
 
     void Awake () {
         floorExist = false;
@@ -307,7 +311,7 @@ public class DJ : MonoBehaviour {
                 }
                 else if (_attackType[i] == "teacherEntered")
                 {
-                    
+
                     TeacherGoOff.letTeacherGo = true;
 
                 }
@@ -316,6 +320,14 @@ public class DJ : MonoBehaviour {
                     GameObject.FindGameObjectWithTag("Teacher").GetComponent<CameraFollow>().speed = 1;
                     myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = true;
                     Debug.Log(myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate);
+                }
+                else if (_attackType[i] == "fingerLaserWarn")
+                {
+                    fingerLaserClone = Instantiate(myAttackTypes.fingerLaser);
+                }
+                else if (_attackType[i] == "fingerLaserGo")
+                {
+                    fingerLaserClone.GetComponent<SniperGlow>().explode = true;
                 }
                 
             }

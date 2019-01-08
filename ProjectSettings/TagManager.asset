@@ -13,7 +13,8 @@ TagManager:
   - FoxOutter
   - TeacherRender
   - Teacher
-  - TeacherFuel
+  - TeachFingerExplode
+  - TeacherFinger
   layers:
   - Default
   - TransparentFX

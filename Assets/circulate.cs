@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeaveParent : MonoBehaviour {
+public class circulate : MonoBehaviour {
 
-    public GameObject deleteTeacherOld;
+    public float speed;
 	void Start () {
-        transform.parent = null;
-        //Destroy(deleteTeacherOld);
-    }
+		
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        transform.Rotate(new Vector3(0, 0, speed * Time.deltaTime));
 	}
 }

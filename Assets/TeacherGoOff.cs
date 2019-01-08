@@ -7,7 +7,7 @@ public class TeacherGoOff : MonoBehaviour {
     public static bool letTeacherGo;
 	void Start () {
         letTeacherGo = false;
-        this.transform.GetChild(0).gameObject.SetActive(false);
+        //this.transform.GetChild(0).gameObject.SetActive(false);
         
         
     }
