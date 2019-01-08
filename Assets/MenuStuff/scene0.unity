@@ -140,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 55015721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 4.28, z: 0}
+  m_LocalPosition: {x: -1.41, y: 4.28, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 209399492}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsEachCirculate: 4
-  degreesEachTime: 15
+  degreesEachTime: 10
   scaleAmout: 0
 --- !u!114 &55015724
 MonoBehaviour:
@@ -2004,7 +2004,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 761701549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.83, y: 5.22, z: 0}
+  m_LocalPosition: {x: 1.83, y: 5.22, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 203598215}
@@ -3055,11 +3055,11 @@ GameObject:
   - component: {fileID: 1284970363}
   m_Layer: 0
   m_Name: LuckyBigOffset
-  m_TagString: Untagged
+  m_TagString: Teacher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1284970361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3072,7 +3072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2002569136}
-  speed: 100
+  speed: 70
 --- !u!4 &1284970362
 Transform:
   m_ObjectHideFlags: 0
@@ -3859,7 +3859,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 100, z: 1}
+  m_Size: {x: 0.5, y: 100, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1743198851
 BoxCollider:
@@ -3871,7 +3871,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 0.5, z: 1}
+  m_Size: {x: 100, y: 0.5, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1821665825
 GameObject:
@@ -3914,7 +3914,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 100, z: 1}
+  m_Size: {x: 0.5, y: 100, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1821665828
 BoxCollider:
@@ -3926,7 +3926,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 0.5, z: 1}
+  m_Size: {x: 100, y: 0.5, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1821665829
 MonoBehaviour:

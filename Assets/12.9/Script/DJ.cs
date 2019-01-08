@@ -307,6 +307,7 @@ public class DJ : MonoBehaviour {
                 }
                 else if (_attackType[i] == "teacherEntered")
                 {
+                    
                     TeacherGoOff.letTeacherGo = true;
 
                 }
@@ -320,6 +321,7 @@ public class DJ : MonoBehaviour {
             }
             
             noteCount += 1;
+            Debug.Log(noteCount);
         }
 
         //Debug.Log(loadNotes.myMeasurements[measure].beatCount);

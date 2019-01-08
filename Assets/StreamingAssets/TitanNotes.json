@@ -871,8 +871,8 @@
     }
     ,
     {
-      "beatCount": 636,
-      "earlyWarning": 8,
+      "beatCount": 632,
+      "earlyWarning": 4,
       "attackType": [
        "wifiMiddle"
       ]
