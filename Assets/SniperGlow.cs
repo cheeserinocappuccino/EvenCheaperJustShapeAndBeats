@@ -46,7 +46,9 @@ public class SniperGlow : MonoBehaviour {
             {
                 Instantiate(theActualAttack,this.transform.position,this.transform.rotation);
                 explode = false;
-                Destroy(this.gameObject);
+                gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+                gameObject.transform.GetChild(0).GetComponentInChildren<ParticleSystem>().enableEmission = false;
+                //Destroy(this.gameObject,0.5f);
             }
         }
 
@@ -63,11 +65,11 @@ public class SniperGlow : MonoBehaviour {
         {
             if (spriteRenderer.color.g == 0)
             {
-                spriteRenderer.color = new Color(255, 255, 255, 0.7f);
+                spriteRenderer.color = new Color(255, 255, 255, 1.0f);
             }
             else if (spriteRenderer.color.g == 255)
             {
-                spriteRenderer.color = new Color(255, 0, 0, 0.7f);
+                spriteRenderer.color = new Color(255, 0, 0, 1.0f);
             }
             yield return new WaitForSeconds(0.06f);
         }

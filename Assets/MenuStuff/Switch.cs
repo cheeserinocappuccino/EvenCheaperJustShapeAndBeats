@@ -44,8 +44,10 @@ public class Switch : MonoBehaviour {
     public Image anyKeyInner, anyKeyOutter;
     private float a;
 
+    private AudioSource audioSource;
+    public AudioClip swichSound;
     void Start () {
-
+        audioSource = GetComponent<AudioSource>();
         isHolding = false;
         enterMenu = false;
         scrollingTimer = 0;
@@ -177,7 +179,7 @@ public class Switch : MonoBehaviour {
 
     public void PressingDetect()
     {
-        if (Input.GetKey(KeyCode.U))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             pressingTimer += Time.deltaTime;
             if (pressingTimer > pressHowLong)
@@ -186,13 +188,13 @@ public class Switch : MonoBehaviour {
             }
 
         }
-        else if (Input.GetKeyUp(KeyCode.U))
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             pressingTimer = 0;
             isHolding = false;
             scrollingTimer = 0;
         }
-        else if (Input.GetKey(KeyCode.Y))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             pressingTimer += Time.deltaTime;
             if (pressingTimer > pressHowLong)
@@ -201,7 +203,7 @@ public class Switch : MonoBehaviour {
             }
 
         }
-        else if (Input.GetKeyUp(KeyCode.Y))
+        else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             pressingTimer = 0;
             isHolding = false;
@@ -215,15 +217,15 @@ public class Switch : MonoBehaviour {
         // 短按時+1
         if (isHolding == false)
         {
-            if (Input.GetKeyDown(KeyCode.U))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-
+               
                 ChooseRight();
 
 
             }
 
-            else if (Input.GetKeyDown(KeyCode.Y))
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
 
                 ChoosLeft();
@@ -233,7 +235,7 @@ public class Switch : MonoBehaviour {
         }
         else if (isHolding == true) // 長按時捲動
         {
-            if (Input.GetKey(KeyCode.U))
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 scrollingTimer += Time.deltaTime;
                 if (scrollingTimer >= scrollInterval)
@@ -244,7 +246,7 @@ public class Switch : MonoBehaviour {
 
             }
 
-            else if (Input.GetKey(KeyCode.Y))
+            else if (Input.GetKey(KeyCode.LeftArrow))
             {
 
                 scrollingTimer += Time.deltaTime;

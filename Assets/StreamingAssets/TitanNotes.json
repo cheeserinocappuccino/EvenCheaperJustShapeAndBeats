@@ -12,7 +12,6 @@
       "earlyWarning": 4,
       "attackType": [
         "laser"
-  
       ]
     },
     {
@@ -859,29 +858,30 @@
       "beatCount": 508,
       "earlyWarning": 4,
       "attackType": [
-        "laser","wifiRight"
+        "laser",
+        "wifiRight"
       ]
     },
     {
       "beatCount": 572,
       "earlyWarning": 4,
       "attackType": [
-        "laser","wifiLeft"
+        "laser",
+        "wifiLeft"
       ]
-    }
-    ,
+    },
     {
       "beatCount": 632,
       "earlyWarning": 4,
       "attackType": [
-       "wifiMiddle"
+        "wifiMiddle"
       ]
-    }    ,
+    },
     {
       "beatCount": 708,
       "earlyWarning": 4,
       "attackType": [
-       "teacherEntered"
+        "teacherEntered"
       ]
     },
     {
@@ -890,7 +890,589 @@
       "attackType": [
         "teacherStartAttack"
       ]
+    },
+    {
+      "beatCount": 768,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 772,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 778,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 780,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 784,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn",
+        "teacherEyeStop"
+      ]
+    },
+    {
+      "beatCount": 788,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 794,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 796,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 800,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherRightEye",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 804,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 810,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 812,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 816,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherEyeStop",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 820,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 826,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 828,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 832,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherLeftEye",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 836,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 842,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 844,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 848,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherEyeStop",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 852,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 858,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 860,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 864,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherRightEye",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 868,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 874,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 876,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 880,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherEyeStop",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 884,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 890,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 892,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 896,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherLeftEye",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 900,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 906,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 908,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 912,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherEyeStop",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 916,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 922,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 924,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 928,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherRightEye",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 932,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 938,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 940,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 944,
+      "earlyWarning": 0,
+      "attackType": [
+        "teacherEyeStop",
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 948,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 954,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 956,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 960,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn",
+        "teacherLeftEye"
+      ]
+    },
+    {
+      "beatCount": 964,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 970,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserwarn"
+      ]
+    },
+    {
+      "beatCount": 972,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 976,
+      "earlyWarning": 0,
+      "attackType": [        "teacherEyeStop",
+        "fingerLaserWarn"
+        
+      ]
+    },
+    {
+      "beatCount": 980,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 986,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 988,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 992,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn",
+        "teacherRightEye"
+      ]
+    },
+    {
+      "beatCount": 996,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1002,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1004,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1008,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn",
+        "teacherEyeStop"
+      ]
+    },
+    {
+      "beatCount": 1012,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1018,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1020,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1024,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn",
+        "teacherLeftEye"
+      ]
+    },
+    {
+      "beatCount": 1026,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1028,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1030,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1032,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1034,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1036,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1038,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1040,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn","teacherEyeStop"
+      ]
+    },
+    {
+      "beatCount": 1042,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1044,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1046,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1048,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1050,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1052,
+      "earlyWarning": 0,
+      "attackType": [
+        "fingerLaserWarn"
+      ]
+    },
+    {
+      "beatCount": 1054,
+      "earlyWarning": 2,
+      "attackType": [
+        "fingerLaserGo"
+      ]
+    },
+    {
+      "beatCount": 1056,
+      "earlyWarning": 0,
+      "attackType": [
+        "end"
+      ]
     }
-]
-  
+  ]
 }

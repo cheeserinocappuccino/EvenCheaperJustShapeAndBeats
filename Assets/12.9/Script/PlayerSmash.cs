@@ -125,6 +125,7 @@ public class PlayerSmash : MonoBehaviour {
             Instantiate(hitGroundEffect, transform.position, transform.rotation);
 
             theDJ.ScoreChange(1);
+            HoldData.floorCount += 1;
         }
         else if (collision.gameObject.tag == "Enemy")
         {
@@ -137,6 +138,9 @@ public class PlayerSmash : MonoBehaviour {
 
     public void playerGetHurt()
     {
+        
+        HoldData.gotHitTimes += 1;
+        Debug.Log(HoldData.gotHitTimes);
         immortalTime = setImmortalTime;
        CameraShake CameraShake = GameObject.FindGameObjectWithTag("Camera").GetComponent<CameraShake>();
 

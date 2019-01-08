@@ -7,7 +7,7 @@ public class LeaveParent : MonoBehaviour {
     public GameObject deleteTeacherOld;
 	void Start () {
         transform.parent = null;
-        //Destroy(deleteTeacherOld);
+        Destroy(deleteTeacherOld);
     }
 	
 	// Update is called once per frame

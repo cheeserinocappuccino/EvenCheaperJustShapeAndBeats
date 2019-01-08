@@ -5,9 +5,11 @@ using UnityEngine;
 public class TeacherGoOff : MonoBehaviour {
 
     public static bool letTeacherGo;
+    private bool dontDotwice;
 	void Start () {
+        dontDotwice = false;
         letTeacherGo = false;
-        //this.transform.GetChild(0).gameObject.SetActive(false);
+        this.transform.GetChild(0).gameObject.SetActive(false);
         
         
     }
@@ -23,10 +25,11 @@ public class TeacherGoOff : MonoBehaviour {
             
 
         }
-        else if (letTeacherGo == true)
+        else if (letTeacherGo == true && dontDotwice == false)
         {
             //this.transform.parent = null;
             this.transform.GetChild(0).gameObject.SetActive(true);
+            dontDotwice = true;
         }
 	}
 }

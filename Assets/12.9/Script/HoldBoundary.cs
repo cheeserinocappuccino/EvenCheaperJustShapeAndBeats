@@ -26,9 +26,12 @@ public class HoldBoundary : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        topBoundary = theCamera.transform.position.y + toTopheight;
-        downBoundary = theCamera.transform.position.y - toDownheight;
-        //Debug.Log(topBoundary + "   " + downBoundary);
-
+        try
+        {
+            topBoundary = theCamera.transform.position.y + toTopheight;
+            downBoundary = theCamera.transform.position.y - toDownheight;
+            //Debug.Log(topBoundary + "   " + downBoundary);
+        }
+        catch { }
 	}
 }

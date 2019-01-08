@@ -122,6 +122,8 @@ public class DJ : MonoBehaviour {
     // 手指的實例
     private GameObject fingerLaserClone;
 
+    // 結束時但出
+    public GameObject sceneChanger;
     void Awake () {
         floorExist = false;
         camera = GameObject.FindGameObjectWithTag("Camera");
@@ -176,11 +178,12 @@ public class DJ : MonoBehaviour {
 
             totalmeasure = totalBeatCount / 32;
 
-            try
+           try
             {
                 Attack(loadNotes.myEveryNotes[noteCount].beatCount, loadNotes.myEveryNotes[noteCount].earlyWarning, loadNotes.myEveryNotes[noteCount].attackType);
 
             }
+            
             catch
             {
                 //Debug.Log("已超出樂譜長度或是忘記拉近hirerachy");
@@ -317,9 +320,20 @@ public class DJ : MonoBehaviour {
                 }
                 else if (_attackType[i] == "teacherStartAttack")
                 {
-                    GameObject.FindGameObjectWithTag("Teacher").GetComponent<CameraFollow>().speed = 1;
+                    GameObject.FindGameObjectWithTag("Teacher").GetComponent<CameraFollow>().speed = 5;
                     myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = true;
                     Debug.Log(myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate);
+                }
+                else if (_attackType[i] == "teacherLeftEye")
+                {
+                    myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = true;
+                    myAttackTypes.rightEye.GetComponent<TeacherCircleCenter>().activate = false;
+
+                }
+                else if (_attackType[i] == "teacherRightEye")
+                {
+                    myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = false;
+                    myAttackTypes.rightEye.GetComponent<TeacherCircleCenter>().activate = true;
                 }
                 else if (_attackType[i] == "fingerLaserWarn")
                 {
@@ -329,11 +343,20 @@ public class DJ : MonoBehaviour {
                 {
                     fingerLaserClone.GetComponent<SniperGlow>().explode = true;
                 }
+                else if (_attackType[i] == "teacherEyeStop")
+                {
+                    myAttackTypes.leftEye.GetComponent<TeacherCircleCenter>().activate = false;
+                    myAttackTypes.rightEye.GetComponent<TeacherCircleCenter>().activate = false;
+                }
+                else if (_attackType[i] == "end")
+                {
+                    sceneChanger.SetActive(true);
+                }
                 
             }
             
             noteCount += 1;
-            Debug.Log(noteCount);
+           // Debug.Log(noteCount);
         }
 
         //Debug.Log(loadNotes.myMeasurements[measure].beatCount);

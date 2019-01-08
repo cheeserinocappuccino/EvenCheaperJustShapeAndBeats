@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explode: 0
-  earlySetExplode: 8
+  earlySetExplode: 2
   theActualAttack: {fileID: 1738991196746192, guid: a78c2b297d15c184fa74daa6abf200ec,
     type: 2}
   thePlayer: {fileID: 0}
@@ -3612,7 +3612,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8968a1a65c9daf149af703cef74b39e2, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

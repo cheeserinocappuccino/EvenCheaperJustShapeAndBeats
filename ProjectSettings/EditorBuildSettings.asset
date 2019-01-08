@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MenuStuff/scene0.unity
     guid: c32f62a9eebb7554ca47735ab5f5ab53
+  - enabled: 1
+    path: Assets/MenuStuff/Songs/SceneEnd.unity
+    guid: e3b9338b2b501a64eb9a5308290a7572

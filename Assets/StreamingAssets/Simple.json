@@ -224,6 +224,335 @@
       "attackType": [
         "laser"
       ]
+    },
+    {
+      "beatCount": 256,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 264,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 272,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 280,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 288,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 296,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 304,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 312,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 320,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 328,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 336,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 344,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 352,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 360,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 368,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 376,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 384,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 392,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 400,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 408,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 416,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 424,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 432,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 440,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 448,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 456,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 464,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 472,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 480,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 488,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 496,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 768,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 784,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 800,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 816,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 832,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 848,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 864,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 880,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 896,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 912,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 928,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 944,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 960,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 976,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 992,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
+    },
+    {
+      "beatCount": 1008,
+      "earlyWarning": 4,
+      "attackType": [
+        "laser"
+      ]
     }
   ]
 }

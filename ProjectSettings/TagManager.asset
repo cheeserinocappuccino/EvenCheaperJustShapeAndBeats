@@ -15,6 +15,11 @@ TagManager:
   - Teacher
   - TeachFingerExplode
   - TeacherFinger
+  - FloorSubtitle
+  - Undefined
+  - MoveLeft
+  - GotHitSubtitle
+  - BeepSound
   layers:
   - Default
   - TransparentFX
